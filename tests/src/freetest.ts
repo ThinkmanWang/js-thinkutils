@@ -8,6 +8,12 @@ function base64Test(): void {
 function reg_test():void {
     console.log("ID number 33108119851211651X ==> " + thinkutils.RegUtils.isChineseIDCardNumber("33108119851211651X"))
     console.log("ID number 33108119851311651X ==> " + thinkutils.RegUtils.isChineseIDCardNumber("33108119851311651X"))
+
+    console.log("wangxf1985@gmail.com is email ==> " + thinkutils.RegUtils.isEmail("wangxf1985@gmail.com"))
+    console.log("wangxf1985@gmail is email ==> " + thinkutils.RegUtils.isEmail("wangxf1985@gmail"))
+    console.log("wangxf1985gmail is email ==> " + thinkutils.RegUtils.isEmail("wangxf1985gmail"))
+
+
 }
 
 function main(): void {
