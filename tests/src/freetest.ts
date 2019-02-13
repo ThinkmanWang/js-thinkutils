@@ -6,13 +6,33 @@ function base64Test(): void {
 }
 
 function reg_test():void {
+    console.log(thinkutils.RegUtils.isUrl("12314"));
+    console.log(thinkutils.RegUtils.isUrl("http://baidu.com"));
+    console.log(thinkutils.RegUtils.isUrl("http://baidu.com?a=1&b=2"));
+
     console.log("ID number 33108119851211651X ==> " + thinkutils.RegUtils.isChineseIDCardNumber("33108119851211651X"))
     console.log("ID number 33108119851311651X ==> " + thinkutils.RegUtils.isChineseIDCardNumber("33108119851311651X"))
 
     console.log("wangxf1985@gmail.com is email ==> " + thinkutils.RegUtils.isEmail("wangxf1985@gmail.com"))
     console.log("wangxf1985@gmail is email ==> " + thinkutils.RegUtils.isEmail("wangxf1985@gmail"))
     console.log("wangxf1985gmail is email ==> " + thinkutils.RegUtils.isEmail("wangxf1985gmail"))
+}
 
+function string_test(): void {
+    console.log("test is string ==> " + thinkutils.CommonUtils.isEmpty("  "))
+    console.log("test is string ==> " + thinkutils.CommonUtils.isEmpty(" 1 "))
+}
+
+function number_test(): void {
+    console.log("123 is Number ==> " + thinkutils.CommonUtils.isNumber(123))
+    console.log("123a is Number ==> " + thinkutils.CommonUtils.isNumber("123a"))
+    console.log("\"123\" is Number ==> " + thinkutils.CommonUtils.isNumber("123"))
+    console.log("123.1 is Number ==> " + thinkutils.CommonUtils.isNumber(123.01))
+
+    console.log("123 is Numeric ==> " + thinkutils.CommonUtils.isNumeric(123))
+    console.log("123a is Numeric ==> " + thinkutils.CommonUtils.isNumeric("123a"))
+    console.log("\"123\" is Numeric ==> " + thinkutils.CommonUtils.isNumeric("123"))
+    console.log("123.1 is Numeric ==> " + thinkutils.CommonUtils.isNumeric(123.01))
 
 }
 
@@ -21,12 +41,10 @@ function main(): void {
     var obj = new thinkutils.First();
     obj.testFunc();
 
-    console.log(thinkutils.RegUtils.isUrl("12314"));
-    console.log(thinkutils.RegUtils.isUrl("http://baidu.com"));
-    console.log(thinkutils.RegUtils.isUrl("http://baidu.com?a=1&b=2"));
-
     base64Test();
     reg_test();
+    string_test();
+    number_test();
 }
 
 main();
