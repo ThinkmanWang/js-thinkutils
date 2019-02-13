@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "dist",
+    "removeComments": true,
+//    "compileOnSave": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "noImplicitAny": true
+  }
+  , "files": [
+    "src/freetest.ts"
+    , "../src/thinkutils.ts"
+    , "../src/common/First.ts"
+    , "../src/common/RegUtils.ts"
+  ]
+//  , "exclude": [
+//    "node_modules"
+//  ]
+//  , "exclude": [
+//    "tests"
+//  ]
+}

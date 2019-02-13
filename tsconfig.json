@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "es5",
+    "outDir": "dist",
+    "rootDir": "src",
+    "removeComments": true,
+//    "compileOnSave": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "outFile": "built/thinkutils.js",
+    "noImplicitAny": true
+  }
+//  , "files": [
+//    "src/app.ts",
+//    "src/common/First.ts"
+//  ]
+//  , "exclude": [
+//    "node_modules"
+//  ]
+  , "exclude": [
+    "tests"
+  ]
+}
