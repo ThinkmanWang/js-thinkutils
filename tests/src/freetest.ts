@@ -21,6 +21,8 @@ function reg_test():void {
 function string_test(): void {
     console.log("test is string ==> " + thinkutils.CommonUtils.isEmpty("  "))
     console.log("test is string ==> " + thinkutils.CommonUtils.isEmpty(" 1 "))
+
+    console.log("Upper First for \"thinkman\" ==> " + thinkutils.StringUtils.upperCaseFirst("thinkman"))
 }
 
 function number_test(): void {
@@ -37,7 +39,7 @@ function number_test(): void {
 }
 
 function main(): void {
-
+    console.log(thinkutils.CommonUtils.uuid());
     var obj = new thinkutils.First();
     obj.testFunc();
 
