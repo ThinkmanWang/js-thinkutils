@@ -1,4 +1,3 @@
-/// <reference path="../thinkutils.ts" />
 
 export namespace _RegUtils {
     export function isUrl(szValue: string):boolean {

@@ -1,4 +1,3 @@
-/// <reference path="../thinkutils.ts" />
 
 export class _First {
     private name:string = "Hello World";
