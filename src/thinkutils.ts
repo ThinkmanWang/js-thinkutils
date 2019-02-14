@@ -5,6 +5,7 @@ import {_CommonUtils} from "./common/CommonUtils";
 import {_StringUtils} from "./common/StringUtils";
 import {_utf8} from "./common/utf8";
 import {_DateUtils} from "./common/DateUtils";
+import {_PasswordUtils} from "./common/PasswordUtils";
 
 export namespace thinkutils {
     export const First = _First;
@@ -14,6 +15,7 @@ export namespace thinkutils {
     export const StringUtils = _StringUtils;
     export const utf8 = _utf8
     export const DateUtils = _DateUtils
+    export const PasswordUtils = _PasswordUtils
 }
 
 // import * as First from "./common/First"

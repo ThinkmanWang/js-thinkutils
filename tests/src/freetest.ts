@@ -42,6 +42,11 @@ function utf8_test(): void {
     console.log(thinkutils.utf8.getBytes("你好"))
 }
 
+function password_test(): void {
+    console.log("rand password test ==> " + thinkutils.PasswordUtils.random_password(8));
+    console.log("rand password test ==> " + thinkutils.PasswordUtils.random_password(16))
+}
+
 function date_test(): void {
     console.log(thinkutils.DateUtils.diffDate(-1));
     console.log(thinkutils.DateUtils.today());
@@ -62,6 +67,7 @@ function main(): void {
     number_test();
     utf8_test();
     date_test();
+    password_test();
 }
 
 main();
