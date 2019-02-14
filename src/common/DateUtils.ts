@@ -29,8 +29,32 @@ export namespace _DateUtils {
             strDate = "0" + strDate;
         }
 
+        var nHour = date.getHours();
+        var szHour = "";
+        if (nHour < 10) {
+            szHour = "0" + nHour;
+        } else {
+            szHour = "" + nHour
+        }
+
+        var nMinutes = date.getMinutes();
+        var szMinutes = "";
+        if (nMinutes < 10) {
+            szMinutes = "0" + nMinutes;
+        } else {
+            szMinutes = "" + nMinutes;
+        }
+
+        var nSeconds = date.getSeconds();
+        var szSeconds = "";
+        if (nSeconds < 10) {
+            szSeconds = "0" + nSeconds;
+        } else {
+            szSeconds = "" + nSeconds;
+        }
+
         return date.getFullYear() + "-" + month + "-" + strDate + " "
-            + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+            + szHour + ":" + szMinutes + ":" + szSeconds;
     }
 
     export function timestamp():number {
