@@ -38,6 +38,16 @@ function number_test(): void {
 
 }
 
+function utf8_test(): void {
+    console.log(thinkutils.utf8.getBytes("你好"))
+}
+
+function date_test(): void {
+    console.log(thinkutils.DateUtils.diffDate(-1));
+    console.log(thinkutils.DateUtils.today());
+    console.log(thinkutils.DateUtils.diffDate(1));
+}
+
 function main(): void {
     console.log(thinkutils.CommonUtils.uuid());
     var obj = new thinkutils.First();
@@ -47,6 +57,8 @@ function main(): void {
     reg_test();
     string_test();
     number_test();
+    utf8_test();
+    date_test();
 }
 
 main();
