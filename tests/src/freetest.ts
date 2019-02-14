@@ -46,6 +46,11 @@ function date_test(): void {
     console.log(thinkutils.DateUtils.diffDate(-1));
     console.log(thinkutils.DateUtils.today());
     console.log(thinkutils.DateUtils.diffDate(1));
+    console.log(thinkutils.DateUtils.now());
+    console.log(thinkutils.DateUtils.timestamp());
+    console.log(thinkutils.DateUtils.timestamp_ms());
+
+
 }
 
 function main(): void {
